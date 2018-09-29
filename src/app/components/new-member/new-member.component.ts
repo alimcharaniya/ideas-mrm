@@ -12,7 +12,10 @@ export class NewMemberComponent {
   myForm: FormGroup;
   myobject = {
     memberName: "",
-    memberEmail: ""
+    memberEmail: "",
+    memberNumber: "",
+    memberMajor: "",
+    memberReason:""
   }
   constructor() {
     this.myForm = new FormGroup({
