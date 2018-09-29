@@ -6,6 +6,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NewMemberComponent } from './components/new-member/new-member.component';
 import { ExistingMemberComponent } from './components/existing-member/existing-member.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -21,7 +23,8 @@ import { ExistingMemberComponent } from './components/existing-member/existing-m
     ExistingMemberComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
+    FormsModule, 
     RouterModule.forRoot([
       {
         path: '',

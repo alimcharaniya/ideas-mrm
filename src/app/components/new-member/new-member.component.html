@@ -45,11 +45,11 @@
 						Welcome to the lab
 					</span>
 					<div class="wrap-input100 validate-input" data-validate="Enter username">
-							<input class="input100" type="text" name="username" placeholder="Full Name">
+							<input [(ngModel)]="myobject.memberName" class="input100" type="text" name="username" placeholder="Full Name">
 							<span class="focus-input100" data-placeholder=""></span>
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Enter username">
-							<input class="input100" type="text" name="username" placeholder="Email">
+							<input [(ngModel)]="myobject.memberEmail" class="input100" type="text" name="username" placeholder="Email">
 							<span class="focus-input100" data-placeholder=""></span>
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Enter username">
@@ -67,7 +67,7 @@
 						
 
 					<div class="container-login100-form-btn">
-						<button (click)="existingMember()" class="login100-form-btn">
+						<button (click)="submitNewMember()" class="login100-form-btn">
 							Sign up 
 						</button>
 					</div>

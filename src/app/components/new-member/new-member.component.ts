@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Validators, FormGroup, FormControl, Form } from "@angular/forms";
 
 @Component({
   selector: 'new-member',
@@ -8,19 +9,25 @@ import { Component } from '@angular/core';
 
 export class NewMemberComponent {
   title = 'app';
+  myForm: FormGroup;
+  myobject = {
+    memberName: "",
+    memberEmail: ""
+  }
+  constructor() {
+    this.myForm = new FormGroup({
+      fullName: new FormControl("", [])
+    });
+  }
 
-
-
-  newMember(){
+  newMember() {
     alert("existing");
   }
 
 
-  existingMember(){
-    alert("existing");
+  submitNewMember() {
+    alert(JSON.stringify(this.myobject));
 
   }
 
 }
-
-
