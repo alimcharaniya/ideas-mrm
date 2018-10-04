@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NewMemberComponent } from './components/new-member/new-member.component';
 import { ExistingMemberComponent } from './components/existing-member/existing-member.component';
 import { FormsModule } from '@angular/forms';
+import { EmailValidator } from '@angular/forms/src/directives/validators';
 
 
 
