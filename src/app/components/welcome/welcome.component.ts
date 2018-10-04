@@ -10,12 +10,6 @@ export class WelcomeComponent {
   title = 'app';
 
 
-
-  newMember(){
-    alert("existing");
-  }
-
-
   existingMember(){
     alert("existing");
 

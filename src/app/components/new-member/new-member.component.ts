@@ -17,10 +17,12 @@ export class NewMemberComponent {
     memberMajor: "",
     memberReason:""
   }
+
+
   constructor() {
-    this.myForm = new FormGroup({
-      fullName: new FormControl("", [])
-    });
+    // this.myForm = new FormGroup({
+    //   fullName: new FormControl("", [])
+    // });
   }
 
   newMember() {
@@ -30,7 +32,13 @@ export class NewMemberComponent {
 
   submitNewMember() {
     alert(JSON.stringify(this.myobject));
-
+    this.myobject = {
+      memberName: "",
+      memberEmail: "",
+      memberNumber: "",
+      memberMajor: "",
+      memberReason:""
+    }
   }
 
 }
