@@ -9,7 +9,9 @@ import { Component } from '@angular/core';
 export class ExistingMemberComponent {
   title = 'app';
 
-
+  myobject = {
+    memberSID: "",
+  }
 
   newMember(){
     alert("existing");

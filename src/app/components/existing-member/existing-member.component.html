@@ -44,15 +44,19 @@
 					<span class="login100-form-title p-b-34 p-t-27">
 						EXISTING MEMBER
 					</span>
+					<div class="wrap-input100 validate-input">
+						<input [(ngModel)]="myobject.memberSID" name="Student ID" placeholder="Student ID" class="input100" type="ID">
+						<span class="focus-input100" data-placeholder=""></span>
+					</div>
 
 					<div class="container-login100-form-btn">
 						<button (click)="existingMember()" class="login100-form-btn">
-							Existing Member 
+							Sign In
 						</button>
 					</div>
 
 					<div class="container-login100-form-btn mt-20">
-						<button (click)=" newMember()" class="login100-form-btn">
+						<button routerLink="/new-member" class="login100-form-btn">
 							New Member
 						</button>
 					</div>
