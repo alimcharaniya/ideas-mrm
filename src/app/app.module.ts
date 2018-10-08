@@ -8,6 +8,7 @@ import { NewMemberComponent } from './components/new-member/new-member.component
 import { ExistingMemberComponent } from './components/existing-member/existing-member.component';
 import { FormsModule } from '@angular/forms';
 import { EmailValidator } from '@angular/forms/src/directives/validators';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -25,6 +26,7 @@ import { EmailValidator } from '@angular/forms/src/directives/validators';
   ],
   imports: [
     BrowserModule, 
+    HttpClientModule,
     FormsModule, 
     RouterModule.forRoot([
       {

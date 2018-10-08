@@ -13,14 +13,17 @@ export class ExistingMemberComponent {
     memberSID: "",
   }
 
-  newMember(){
+  newMember() {
     alert("existing");
   }
 
 
-  existingMember(){
-    alert("existing");
+  existingMember() {
+    alert(JSON.stringify(this.myobject));
 
+    this.myobject = {
+      memberSID: "",
+    }
   }
 
 }
